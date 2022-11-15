@@ -157,33 +157,4 @@ impl App {
         }
     }
 
-    fn view_entry_edit_input(&self, (idx, entry): (usize, &Entry), link: &Scope<Self>) -> Html {
-        let edit = move |input: InputElement| {
-            let value = input.value();
-            input.set_value("");
-            Msg::Edit((idx, value))
-        };
-
-        let onblur = link.callback(move |e: FocusEvent| edit(e.target_unchecked_into()));
-
-        let onkeypress = link.batch_callback(move |e: KeyboardEvent| {
-            (e.key() == "Enter").then(|| edit(e.target_unchecked_into()))
-        });
-
-        if entry.editing {
-            html! {
-                <input
-                    class="edit"
-                    type="text"
-                    ref={self.focus_ref.clone()}
-                    value={self.state.edit_value.clone()}
-                    onmouseover={link.callback(|_| Msg::Focus)}
-                    {onblur}
-                    {onkeypress}
-                />
-            }
-        } else {
-            html! { <input type="hidden" /> }
-        }
-    }
 }
