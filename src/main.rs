@@ -1,10 +1,13 @@
-use todolist::TodoList;
-mod utils;
-mod todo;
-mod input;
-mod todolist;
+mod config;
+mod message;
+mod components;
+mod app;
+mod state;
+
+use app::App;
+
 
 fn main() {
-    yew::start_app::<TodoList>();
+    yew::start_app::<App>();
 }
 

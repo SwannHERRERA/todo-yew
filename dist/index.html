@@ -1,11 +1,17 @@
-<!DOCTYPE html><html><head>
+<!DOCTYPE html><html lang="en"><head>
     <meta charset="utf-8">
-    <title>Yew App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yew • TodoMVC</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/todomvc-common@1.0.5/base.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/todomvc-app-css@2.3.0/index.css">
+
+    <script type="module">import init from '/todo-yew-9c8aa018c0f21279.js';init('/todo-yew-9c8aa018c0f21279_bg.wasm');</script>
   
-<link rel="preload" href="/todo-yew-e803dada6ade52f9_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
-<link rel="modulepreload" href="/todo-yew-e803dada6ade52f9.js"></head>
-<body>
-<script type="module">import init from '/todo-yew-e803dada6ade52f9.js';init('/todo-yew-e803dada6ade52f9_bg.wasm');</script><script>(function () {
+<link rel="preload" href="/todo-yew-9c8aa018c0f21279_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
+<link rel="modulepreload" href="/todo-yew-9c8aa018c0f21279.js"></head>
+  <body>
+
+<script>(function () {
     var protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
     var url = protocol + '//' + window.location.host + '/_trunk/ws';
     var poll_interval = 5000;
