@@ -12,7 +12,7 @@ pub fn todo(props: &TodoProps) -> Html {
     html! {
         <>
             <div>
-                <input type="checkbox" id={props.id.clone()}/>
+                <input checked={props.is_completed} type="checkbox" id={props.id.clone()}/>
                 <label for={props.id.clone()}>{ props.content.clone() }</label>
             </div>
         </>

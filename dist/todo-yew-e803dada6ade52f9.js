@@ -565,8 +565,8 @@ function getImports() {
         const ret = wasm.memory;
         return addHeapObject(ret);
     };
-    imports.wbg.__wbindgen_closure_wrapper2537 = function(arg0, arg1, arg2) {
-        const ret = makeClosure(arg0, arg1, 151, __wbg_adapter_26);
+    imports.wbg.__wbindgen_closure_wrapper2604 = function(arg0, arg1, arg2) {
+        const ret = makeClosure(arg0, arg1, 162, __wbg_adapter_26);
         return addHeapObject(ret);
     };
 
@@ -605,7 +605,7 @@ function initSync(module) {
 
 async function init(input) {
     if (typeof input === 'undefined') {
-        input = new URL('todo-yew-1aca4165842d57d7_bg.wasm', import.meta.url);
+        input = new URL('todo-yew-e803dada6ade52f9_bg.wasm', import.meta.url);
     }
     const imports = getImports();
 
