@@ -1,0 +1,17 @@
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color:	#c69edd;
+  padding: 2rem; 
+  border-radius: 5px;
+  border: 5px solid #1e192a;
+}
+
+.modal input {
+  height: 1.5rem;
+}
